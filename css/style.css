@@ -1,0 +1,2787 @@
+/* ---------------------------- fornt start---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/* -------------------------- fornt End-------------------------- */
+
+
+/* ------------------------Global CSS start---------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #FFFFFF;
+}
+.page_up_icon{
+    height: 50px;
+    width: 50px;
+    background:#049f17;
+    border-radius: 50%;
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    position: fixed;
+    transition: all 0.2 linear;
+}
+.page_up_icon .page_icon_box{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+.page_up_icon .page_icon_box i{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color:#ffffff;
+
+}
+/* ------------------------Global CSS End------------------------ */
+
+
+
+/* ------------------------Bnnaar SEC Start---------------------- */
+.bannar_section{
+    width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.bannar_section .bannar_container{
+    width: 100%;
+    height: 100%;
+}
+.bannar_section .bannar_container img{
+    width: 100%;
+    height: 100%;
+}
+/* ------------------------Banner SEC End------------------------ */
+
+
+
+/* ------------------------Menu SEC Start------------------------ */
+.menu_section{
+  width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.main_menu_container{
+    width: 100%;
+    height: auto;
+}
+.main_menu_container .full_menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main_menu_container .full_menu .icon_bx{
+    width: 100%;
+    height: auto;
+    background:#049f17 ;
+    margin-bottom: 5px;
+    display: none;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.main_menu_container .full_menu .icon_bx .menu_icon{
+    border: 1px solid #ffffff;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    float: right;
+    display: block;
+    margin: 5px 0;
+}
+.main_menu_container .full_menu .icon_bx .menu_icon i{
+    font-size: 26px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+}
+.main_menu{
+    width: 100%;
+    display: flex;
+    background:#049f17 ;
+    padding: 0;
+}
+.main_menu_container .main_menu li {
+    list-style: none;
+    border-right: 1px solid #00000036;
+    padding:14px ;
+}
+.main_menu_container .main_menu li  a{
+    color:#ffffff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    text-decoration: none;
+}
+.main_menu_container .main_menu li  a i{
+    margin-left: 8px;
+}
+.main_menu_container .main_menu li:hover{
+    background: #2E2E2E;
+}
+.main_menu_container .main_menu .active{
+    background: #2E2E2E;
+}
+/* ----sub menu section----- */
+.sub_menu_1{
+    display: none;
+    z-index: 50000;
+}
+.sub_menu_2{
+    display: none;
+    z-index: 50000;
+}
+.sub_menu_3{
+    display: none;
+    z-index: 50000;
+}
+.main_menu_container .main_menu li:hover .sub_menu_1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #2E2E2E;
+    margin-top: 14px;
+    margin-left: -15px;
+    width: 160px;
+}
+.main_menu_container .main_menu li:hover .sub_menu_1 ul{
+    display: flex;
+}
+.main_menu_container .main_menu li:hover .sub_menu_1 li{
+    width: 160px;
+    height: 40px;
+    padding: 0 5%;
+    border-right: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    transition: all 0.3s linear;
+    margin-left: -32px;
+}
+.main_menu_container .main_menu li:hover .sub_menu_1 li a{
+    text-align: left;
+}
+.main_menu_container .main_menu li:hover .sub_menu_1 li:hover{
+    border-left: 4px solid #079F17;
+    width: 160px;
+    transition: all 0.3s linear;
+}
+.main_menu_container .main_menu li:hover .sub_menu_1 li:hover a{
+    color:#ffffff;
+}
+.main_menu_container .main_menu li:hover .sub_menu_2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #2E2E2E;
+    margin-top: 14px;
+    margin-left: -15px;
+    width: 101.1px;
+}
+.main_menu_container .main_menu li:hover .sub_menu_2 ul{
+    display: flex;
+}
+.main_menu_container .main_menu li:hover .sub_menu_2 li{
+    width: 101.1px;
+    height: 40px;
+    padding: 0 8%;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s linear;
+    margin-left: -32px;
+}
+.main_menu_container .main_menu li:hover .sub_menu_2 li:hover{
+    border-left: 4px solid #079F17;
+    width: 101.1px;
+    transition: all 0.3s linear;
+}
+.main_menu_container .main_menu li:hover .sub_menu_2 li:hover a{
+    color:#ffffff;
+}
+.main_menu_container .main_menu li:hover .sub_menu_3{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #2E2E2E;
+    margin-top: 14px;
+    margin-left: -15px;
+    width: 120px;
+}
+.main_menu_container .main_menu li:hover .sub_menu_3 ul{
+    display: flex;
+}
+.main_menu_container .main_menu li:hover .sub_menu_3 li{
+    width: 120px;
+    height: 40px;
+    padding: 0 8%;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s linear;
+    margin-left: -32px;
+}
+.main_menu_container .main_menu li:hover .sub_menu_3 li:hover{
+    border-left: 4px solid #079F17;
+    width: 120px;
+    transition: all 0.3s linear;
+}
+.main_menu_container .main_menu li:hover .sub_menu_3 li:hover a{
+    color:#ffffff;
+}
+/* ----sub menu section----- */
+/* ------------------------MEnu SEC End-------------------------- */
+
+
+
+/* -----------------------Sironam SEC start----------------------- */
+.seronam_section{
+    width: 1200px;
+    margin:10px auto;
+    z-index: 1;
+    padding: 0 20px;
+}
+.seronam_section .seronam_container{
+    display: flex; 
+}
+.seronam_section .seronam_container .seroram_headding{
+    background: #079F17;
+    width: 13%;
+    display: flex;
+    align-items: center;
+    color:#ffffff;
+    height: 47px;
+}
+.seronam_section .seronam_container .seroram_headding p{
+    margin-top: 18px;
+    margin-left: 15px;
+}
+.seronam_section .seronam_container .seroman_text{
+    display: flex;
+    align-items: center;
+}
+.seronam_section .seronam_container .seroman_text marquee{
+    font-size: 14px;
+    border:1px solid #079F17;
+    padding: 12px 0;
+    color: #079F17;
+}
+/* -----------------------------Sironam SEC End------------------ */
+
+
+
+/* -----------------------------Slider SEC Start---------------- */
+.slider_section{
+    width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.carousel-item{
+    width: 100%;
+    height: 500px;
+}
+/* -----------------------------Slider SEC End------------------ */
+
+
+
+/* -----------------------------Body SEC End------------------ */
+.body_section{
+    width: 1200px;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.mian_body{
+    width: 70%;
+    height: auto;
+    background: rgb(255, 255, 255);
+}
+/* ---about section start--- */
+.about_section{
+    width: 100%;
+    height: auto;
+}
+.about_container{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 0px 0px 5px #0000001a;
+    border-radius: 3px;
+    border:1px solid #00000015;
+}
+.about_container img{
+    height: 270px;
+    width: 400px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    float: right;
+}
+.about_container p{
+    text-align: justify;
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: 400;
+    color:#000000;
+}
+.about_container p a{
+    text-decoration: none;
+}
+/* ---about section End --- */
+/* -- card section start -- */
+.card_section{
+    width: 100%;
+    height: auto;
+}
+.card_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_container .card{
+    height: 200px;
+    width: 48%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 15px;
+    box-shadow: 0px 0px 5px #0000001a;
+}
+.card_container .card .card_headding{
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #0000002f;
+    position: relative;
+}
+.card_container .card .card_headding h1{
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 700;
+    color:#079F17;
+    margin-top: 5px;
+}
+.card_container .card .card_headding::after{
+    content: '';
+    height: 3px;
+    width: 30px;
+    background:#079F17 ;
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+}
+.card_container .card .card_body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.card_container .card .card_body .card_body_left{
+    width:40%;
+    height: auto;
+}
+.card_container .card .card_body .card_body_left img{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+.card_container .card .card_body .card_body_left img:last-child{
+    width: 100%;
+    height: 130px;
+}
+.card_container .card .card_body .card_body_right{
+    width: 60%;
+    height: auto;
+    padding-top: 10px;
+}
+.card_container .card .card_body .card_body_right ul li{
+   margin: 3px 0;
+}
+.card_container .card .card_body .card_body_right ul li a{
+    text-decoration: none;
+    color:#000000;
+    font-size:15px ;
+    transition: all 0.2s linear;
+}
+.card_container .card .card_body .card_body_right ul li a:hover{
+    color:#079F17;
+    transition: all 0.1s linear;
+}
+/* ----card section End --- */
+/* ----Slider section Start --- */
+.image_slider{ 
+    width: 100%;
+    height: auto;
+}
+.slider_headding{
+    width: 100%;
+    display: flex;
+    height: auto;
+    background: #DEDEDE;
+    padding-top: 10px;
+    border-left: 4px solid #f00707;
+}
+.slider_headding i{
+    transform: rotate(30deg);
+    margin-right: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    color:#079F17;
+}
+.slider_headding h1{
+    font-size: 18px;
+    font-weight: 700;
+    color:#d17014;
+    line-height: 26px;
+}
+.slide_div_container{
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    overflow-y: hidden;
+}
+.slide_div_container a{
+    height: 200px;
+    width: 260px;
+    background: #DDDDDD;
+    text-decoration: none;
+    overflow-y: hidden;
+    margin: 0 10px;
+}
+.slide_div_container a .slide_div img{
+    width: 100%;
+    height: 140px;
+}
+.slide_div_container a .slide_div p{
+    height: 60px;
+    font-size:15px ;
+    line-height: 23px;
+    color:#000000;
+    font-weight: 400;
+    border-left: 3px solid #079F17;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+/* -----Slider section End ---- */
+/* ----Slider section Start --- */
+.video_slider{ 
+    width: 100%;
+    height: auto;
+}
+.video_headding{
+    width: 100%;
+    display: flex;
+    height: auto;
+    background: #DEDEDE;
+    padding-top: 10px;
+    border-left: 4px solid #f00707;
+}
+.video_headding i{
+    margin-right: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    color:#079F17;
+}
+.video_headding h1{
+    font-size: 18px;
+    font-weight: 700;
+    color:#d17014;
+    line-height: 26px;
+}
+.slide_vid_div_container{
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    overflow-y: hidden;
+}
+.slide_vid_div_container a{
+    height: 200px;
+    width: 220px;
+    background: #DDDDDD;
+    text-decoration: none;
+    overflow-y: hidden;
+    margin: 0 10px;
+}
+.slide_vid_div_container a iframe{
+    width: 100%;
+    height: 100%;
+}
+/* -----Slider section End ---- */
+/* -----------------------------Body SEC End------------------ */
+
+
+
+/* -----------------------------Info body SEC start---------------- */
+.info_body{
+    width: 27%;
+    height:auto;
+    background: rgb(255, 252, 252);
+    margin-bottom: 50px;
+}
+/* ----meyor card section start--- */
+.meyor_card{
+    width: 100%;
+    height: 260px;
+    margin-bottom: 10px;
+}
+.meyor_container .meyor_headding{
+    width: 100%;
+    height: 50px;
+    background:#079F17 ;
+}
+.meyor_container .meyor_headding h2{
+    font-size: 20px;
+    line-height: 29px;
+    color:#ffffff;
+    font-weight: 400;
+    padding-top: 12px;
+    text-align: center;
+}
+.meyor_container .meyor_body{
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+.meyor_container .meyor_body img{
+    height: 170px;
+    width: 150px;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.meyor_container .meyor_body p{
+    font-size:14px ;
+    line-height: 23px;
+    font-weight: 400;
+    color:#000000;
+    text-align: justify;
+    padding-right: 8px;
+}
+.meyor_container .meyor_body p a{
+    text-decoration: none;
+}
+/* ----meyor card section end--- */
+/* ----notic card section Start--- */
+.notic_card{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    background: #F7F7F7;
+}
+.notic_card .notic_headding{
+    width: 100%;
+    height: 48px;
+    background:#079F17 ;
+    border-radius: 20px 20px 0 0;
+}
+.notic_card .notic_headding h2{
+    font-size: 20px;
+    line-height: 29px;
+    color:#ffffff;
+    font-weight: 400;
+    padding-top: 12px;
+    text-align: center;
+}
+.notic_card .notic_container .notic_row{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #33333352;
+    padding-left: 8px;
+}
+.notic_card .notic_container .notic_row i{
+    font-size: 16px;
+    color:#079F17;
+    margin-right: 8px;
+}
+.notic_card .notic_container .notic_row a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color:#000000;
+    transition: all 0.2s linear;
+}
+.notic_card .notic_container .notic_row a:hover{
+    color:#079F17;
+    transition: all 0.2s linear;
+}
+/* ----notic card section end----- */
+/* ----notic card section Start--- */
+.link_card{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    background: #F7F7F7;
+}
+.link_card .link_headding{
+    width: 100%;
+    height: 48px;
+    background:#079F17 ;
+    border-radius: 20px 20px 0 0;
+}
+.link_card .link_headding h2{
+    font-size: 20px;
+    line-height: 29px;
+    color:#ffffff;
+    font-weight: 400;
+    padding-top: 12px;
+    text-align: center;
+}
+.link_card .link_container .notic_row{
+    height: 40px;
+    width: 100%;
+    background: #F7F7F7;
+    display: flex;
+    align-items: center;
+    border: 1px solid #33333323;
+    padding-left: 8px;
+    margin: 10px 0;
+    transition: all 0.2s linear;
+}
+.link_card .link_container .notic_row:last-child{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.link_card .link_container .notic_row i{
+    font-size: 16px;
+    color:#079F17;
+    margin-right: 8px;
+}
+.link_card .link_container .notic_row a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color:#000000;
+    transition: all 0.2s linear;
+}
+.link_card .link_container .notic_row a:hover{
+    color:#079F17;
+    transition: all 0.2s linear;
+}
+.link_card .link_container .notic_row:hover{
+    border: 1px solid #33333351;
+    transition: all 0.2s linear;
+}
+/* ----notic card section end----- */
+/* -----------------------------Info body SEC End------------------ */
+
+
+
+
+/* -----------------------------footer SEC Start ------------------ */
+.footer_section{
+    width: 100%;
+    background: #22272B;
+    padding:30px 0 ;
+}
+.footer_container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.footer_card_div{
+    width: 24%;
+}
+.footer_card_div .footer_headding{
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #3C4043;
+    position: relative;
+    margin-bottom: 25px;
+}
+.footer_card_div .footer_headding::after{
+    content: '';
+    height: 2px;
+    width: 60px;
+    background: rgb(0, 255, 115);
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+}
+.footer_card_div .footer_headding h2{
+    font-size:18px ;
+    line-height: 26px;
+    font-weight: 400;
+    color:#ffffff;
+}
+/* ---tikana section start----- */
+.footer_card_div .tikana_container .tikana_div{
+    display: flex;
+}
+.footer_card_div .tikana_container .tikana_div i{
+    color:#049f17;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.footer_card_div .tikana_container .tikana_div  p{
+    font-size: 15px;
+    line-height: 23px;
+    color:#ffffff;
+}
+.footer_card_div .tikana_container .social_icon{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer_card_div .tikana_container .social_icon a{
+    border: 1px solid #ffffff;
+    padding: 3px 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.footer_card_div .tikana_container .social_icon a:hover{
+    background:#049f17;
+    border: 1px solid #049f17;
+    transition: all 0.3s linear;
+}
+.footer_card_div .tikana_container .social_icon i{
+    margin-right: 0;
+    color:#ffffff;
+}
+/* ---tikana section End----- */
+/* ---Fotter menu section start----- */
+.footer_menu_container{
+    display: flex;
+    flex-direction: column;
+}
+.footer_menu_container .menu_card{
+    text-decoration: none;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #3C4043;
+}
+.footer_menu_container a{
+    text-decoration: none;
+    color:#707070;
+    font-size: 15px;
+    line-height: 23px;
+    transition:all 0.3s linear ;
+    cursor: pointer;
+}
+.footer_menu_container .menu_card:hover a{
+    margin-left: 5px;
+    color:#049f17;
+    transition:all 0.3s linear ;
+}
+/* ---Fotter menu section End----- */
+/* -----------------------------Footer SEC End------------------ */
+
+
+
+/* -----------------------------copyRight SEC start---------------- */
+.copyRight_section{
+    width: 100%;
+    background: #1D2023;
+    border-top: .5px solid #ffffff48;
+}
+.copyRight_container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    padding: 0 20px;
+}
+.copyRight_container h4{
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 600;
+    color:#ffffff;
+    padding: 15px 0;
+}
+.copyRight_container h4 a{
+    color:#049f17;
+    text-decoration: none;
+}
+/* -----------------------------copyRight SEC End------------------ */
+
+
+
+
+/* -----------------------------------------------------------------
+--------------------protisthan somporte page start------------------
+----------------------------------------------------------------- */
+.menu_about{
+    width: 1200px;
+    margin: auto;
+    height: auto;
+}
+.menu_about_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.menu_about_container .menu_about_headding{
+    width: 100%;
+    background: #DDDDDD;
+    padding: 5px 0;
+    border-left: 3px solid #049f17;
+    margin: 15px 0;
+}
+.menu_about_container .menu_about_headding h2{
+    font-size: 18px;
+    color:#2b2b2b;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.menu_about_container .menu_body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.menu_about_container .menu_body p{
+    font-size: 15px;
+    line-height: 24px;
+    color:#000000;
+    font-weight: 400;
+    text-align: justify;
+}
+.menu_about_container .menu_body img{
+    height: 400px;
+    width: 650px;
+    float: right;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+/* -----------------------------------------------------------------
+--------------------protisthan somporte page End--------------------
+----------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------
+------------------------About Employ page start---------------------
+----------------------------------------------------------------- */
+.table_section{
+    width: 1200px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #DDDDDD;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table_section .table_headding h2{
+    font-size: 18px;
+    line-height: 31px;
+    color:#000000;
+    font-weight: 700;
+}
+.table_section .table{
+    width: 100%;
+    height: auto;
+    border: 1px solid #DDDDDD;
+}
+.table_section .table .thead{
+    background: #DDDDDD;
+}
+.table_section .table tbody{
+    text-align: center;
+}
+.table_section .table  tr th{
+    font-size: 16px;
+    line-height: 23px;
+    color:#000000;
+    font-weight: 700;
+    border: none;
+}
+.table_section .table  tr{
+    align-items: center;
+}
+.table_section .table  tr td{
+    border: 1px solid #DDDDDD;
+}
+.table_section .table tr .tx{
+    padding-top: 50px;
+    font-size: 15px;
+    line-height: 21px;
+    color:#0f0d0d;
+}
+.table_section .table  tr td img{
+    height: 100px;
+    width: 100px;
+}
+.table_section .table  tr td button{
+    padding: 8px 15px;
+    background:#049f17;
+    color:#ffffff;
+    margin-top: -10px;
+}
+
+/* -----------------------------------------------------------------
+------------------------About Employ page start---------------------
+----------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------
+------------------------About Prokolpo page start---------------------
+----------------------------------------------------------------- */
+.prokolpo_section{
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.prokolpo_section table{
+    width: 100%;
+    height: auto;
+}
+.prokolpo_section table thead{
+    width: 100%;
+    background: #079F17;
+    text-align: center;
+}
+.prokolpo_section table thead tr th{
+    padding: 15px 0;
+    border: 1px solid rgb(213, 213, 213);
+    color:#ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.prokolpo_section table  tbody{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.prokolpo_section table  tbody tr td{
+    padding: 15px 0;
+    border: 1px solid rgb(213, 213, 213);
+    color:#333333;
+    font-size: 16px;
+}
+.prokolpo_section table  tbody tr td button{
+    background:#049f17;
+    padding: 8px 20px;
+    color:#ffffff;
+    border-radius: 4px ;
+}
+/* -----------------------------------------------------------------
+------------------------About prokolpo page start---------------------
+----------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------
+---------------------------Notic page start-------------------------
+----------------------------------------------------------------- */
+.notic_section{
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.notic_section table{
+    width: 100%;
+    height: auto;
+}
+.notic_section table thead{
+    width: 100%;
+    background: #079F17;
+    text-align: center;
+}
+.notic_section table thead tr th{
+    padding: 10px 0;
+    border: 1px solid rgb(213, 213, 213);
+    color:#ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.notic_section table  tbody{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.notic_section table  tbody tr td{
+    padding: 8px 0;
+    border: 1px solid rgb(213, 213, 213);
+    color:#333333;
+    font-size: 16px;
+}
+.notic_section table  tbody tr td button{
+    background:#049f17;
+    padding: 3px 10px;
+    color:#ffffff;
+    border-radius: 4px ;
+}
+.notic_section table  tbody tr td a{
+    text-decoration: none;
+    color:#049f17;
+}
+/* -----------------------------------------------------------------
+----------------------------Notic page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------
+----------------------------counsil page start-------------------------
+----------------------------------------------------------------- */
+.pagination_section{
+    width: 100%;
+    height: auto;
+    padding: 0 5px;
+}
+.pagination_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pagination_container .prv_page,
+.pagination_container .next_page
+{
+    height: 30px;
+    width: 45px;
+    position: relative;
+    border-radius: 13px;
+    border:1px solid #049f17;
+}
+.pagination_container .prv_page a,
+.pagination_container .next_page a
+{
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#049f17;
+}
+.pagination_container .prv_page:hover,
+.pagination_container .next_page:hover
+{
+    border:1px solid #B1B1B1;
+}
+.pagination_container .prv_page:hover a,
+.pagination_container .next_page:hover a
+{
+    color:#B1B1B1;
+}
+.pagination_container .main_page{
+    display: flex;
+}
+.pagination_container .main_page a{
+    padding: 2.5px 14px;
+    position: relative;
+    border-radius: 13px;
+    border:1px solid #049f17;
+    color:#049f17;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.pagination_container .main_page  .active{
+    border:1px solid #B1B1B1;
+    color:#B1B1B1;
+}
+.pagination_container .main_page a:hover{
+    border:1px solid #B1B1B1;
+    color:#B1B1B1;
+}
+/* -----------------------------------------------------------------
+----------------------------counsil page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------
+----------------------------Photo page start-------------------------
+----------------------------------------------------------------- */
+.photo_section{
+    width: 1200px;
+    margin: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.photo_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.photo_container .photo{
+    width: 290px;
+    height: 180px;
+    padding: 5px;
+    background: rgb(255, 254, 254);
+    box-shadow: 0px 0px 5px #0000003d;
+    position: relative;
+}
+.photo_container .photo img{
+    width: 100%;
+    height: 100%;
+}
+.photo_container .photo::before{
+    content: 'photo-01';
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    background:#049f17 ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s linear;
+    padding-top: 70px;
+    padding-left: 30px;
+    color:#ffffff;
+}
+.photo_container .photo:nth-child(2):before{
+    content: 'photo-02';
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    background:#049f17 ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s linear;
+    padding-top: 70px;
+    padding-left: 30px;
+    color:#ffffff;
+}
+.photo_container .photo:nth-child(3):before{
+    content: 'photo-03';
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    background:#049f17 ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s linear;
+    padding-top: 70px;
+    padding-left: 30px;
+    color:#ffffff;
+}
+.photo_container .photo:nth-child(4):before{
+    content: 'photo-04';
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    background:#049f17 ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s linear;
+    padding-top: 70px;
+    padding-left: 30px;
+    color:#ffffff;
+}
+.photo_container .photo:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: all 0.3s linear;
+}
+/* -----------------------------------------------------------------
+----------------------------Photo page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------
+----------------------------video page start-------------------------
+----------------------------------------------------------------- */
+.video_section{
+    width:1200px;
+    margin: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.video_container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.video_container .video{
+    width: 300px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    box-shadow: 0px 0px 5px #0000003d;
+}
+.video_container .video iframe{
+    width: 100%;
+    height: 80%;
+}
+.video_container .video .video_text{
+    width: 100%;
+    height: 17%;
+    background: #DDDDDD;
+    border-left: 3px solid #049f17;
+}
+.video_container .video .video_text p{
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 23px;
+    color:#000000;
+}
+/* -----------------------------------------------------------------
+----------------------------video page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------
+----------------------------recent page start-------------------------
+----------------------------------------------------------------- */
+.recent_section{
+    width: 1200px;
+    margin: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.recent_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.recent_container .photo{
+    width: 380px;
+    height: 280px;
+    padding: 5px;
+    background: rgb(255, 254, 254);
+    box-shadow: 0px 0px 5px #0000003d;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recent_container .photo img{
+    width: 100%;
+    height: 82%;
+}
+.recent_container .photo .photo_text{
+    width: 100%;
+    height: 13%;
+    background: #DDDDDD;
+    border-left: 3px solid #049f17 ;
+}
+.recent_container .photo .photo_text p{
+    padding-top: 7px;
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+/* -----------------------------------------------------------------
+----------------------------Recent page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------
+----------------------------Contact page start-----------------------
+----------------------------------------------------------------- */
+.contact_section{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background: #F8F7FD;
+    margin-top: 35px;
+}
+.contact_container{
+    width: 1200px;
+    margin: auto;
+    height: auto;
+    background:#F8F7FD;
+    text-align: center;
+    padding: 45px 0;
+}
+.contact_container .contact_headding h2{
+    color:#049f17;
+}
+.contact_container .txx{
+    width: 350px;
+    padding:15px;
+    margin: 20px;
+}
+.contact_container textarea{
+    width: 95%;
+    padding: 15px;
+    margin: 15px 0;
+    margin-bottom: 35px;
+}
+.contact_container .send{
+    padding: 15px 55px;
+    background:#049f17 ;
+    color:#ffffff;
+    font-size:18px ;
+    line-height: 28px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+.contact_map{
+    width: 100%;
+    height: 500px;
+}
+.contact_container .send:hover{
+    background: #040E2A;
+    transition: all 0.3s linear;
+}
+/* -----------------------------------------------------------------
+----------------------------Contact page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+
+
+/* -----------------------------------------------------------------
+----------------------------404 page start-------------------------
+----------------------------------------------------------------- */
+.page_404{
+    width: 1200px;
+    margin: auto;
+    height: 70vh;
+}
+.container_404{
+    width: 100%;
+    height: 100%;
+    padding:50px 150px ;
+}
+.container_404 img{
+    width:100%;
+    height: 100%;
+}
+/* -----------------------------------------------------------------
+----------------------------404 page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+
+
+/* -----------------------------------------------------------------
+----------------------------Responsive 1200px page Start-------------------
+----------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+/* ------------------------Global CSS start---------------------- */
+    .page_up_icon{
+        height: 40px;
+        width: 40px;
+    }
+    .page_up_icon .page_icon_box i{
+        top: 45%;
+        font-size: 25px;
+    }
+/* ------------------------Global CSS End------------------------ */
+
+
+/* ------------------------Bnnaar SEC Start---------------------- */
+    .bannar_section{
+        width: 991px;
+        padding: 0 10px;
+    }
+/* ------------------------Banner SEC End------------------------ */
+
+
+
+/* ------------------------Menu SEC Start------------------------ */
+    .menu_section{
+        width: 991px;
+        padding: 0 10px;
+    }
+/* ------------------------MEnu SEC End-------------------------- */
+  
+  
+/* -----------------------Sironam SEC start----------------------- */
+    .seronam_section{
+        width:991px;
+        padding: 0 10px;
+    }
+/* -----------------------------Sironam SEC End------------------ */
+  
+  
+/* -----------------------------Slider SEC Start---------------- */
+    .slider_section{
+        width: 991px;
+        padding: 0 10px;
+    }
+    .carousel-item{
+        height: auto;
+    }
+/* -----------------------------Slider SEC End------------------ */
+  
+  
+  
+/* -----------------------------Body SEC End------------------ */
+    .body_section{
+        width: 991px;
+        padding: 0 10px;
+    }
+    .mian_body{
+        width: 72%;
+    }
+/* ---about section start--- */
+    .about_container p{
+        font-size: 15px;
+    }
+/* ---about section End --- */
+/* -----------------------------Body SEC End------------------ */
+  
+  
+/* -----------------------------Info body SEC start---------------- */
+    .info_body{
+        width: 25%;
+        height:auto;
+        background: rgb(255, 252, 252);
+        margin-bottom: 50px;
+    }
+/* ----meyor card section start--- */
+    .meyor_card{
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .meyor_container .meyor_headding{
+        height: 40px;
+    }
+    .meyor_container .meyor_headding h2{
+        font-size: 18px;
+        line-height: 25px;
+        padding-top: 7px;
+    }
+    .meyor_container .meyor_body{
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+    }
+    .meyor_container .meyor_body img{
+        height: 150px;
+        width: 130px;
+        float: left;
+        padding-right: 7px;
+        padding-bottom: 0px;
+    }
+    .meyor_container .meyor_body p{
+        font-size:14px ;
+        line-height: 22px;
+    }
+/* ----meyor card section end--- */
+/* ----notic card section Start--- */
+    .notic_card .notic_headding{
+        width: 100%;
+        height: 40px;
+    }
+    .notic_card .notic_headding h2{
+        font-size: 18px;
+        line-height: 25px;
+        padding-top: 8px;
+    }
+    .notic_card .notic_container .notic_row{
+        height: 45px;
+    }
+    .notic_card .notic_container .notic_row i{
+        font-size: 15px;
+    }
+/* ----notic card section end----- */
+/* ----notic card section Start--- */
+    .link_card .link_headding{
+        width: 100%;
+        height: 45px;
+    }
+    .link_card .link_headding h2{
+        font-size: 18px;
+        line-height: 25px;
+        padding-top: 8px;
+    }
+/* ----notic card section end----- */
+/* -----------------------------Info body SEC End------------------ */
+  
+  
+  
+  
+/* -----------------------------footer SEC Start ------------------ */
+    .footer_container{
+        width: 991px;
+        padding: 0 10px;
+    }
+    .footer_card_div{
+        width: 23%;
+    }
+/* ---tikana section start----- */
+    .footer_card_div .tikana_container .tikana_div{
+        display: flex;
+    }
+    .footer_card_div .tikana_container .tikana_div i{
+        font-size: 15px;
+    }
+    .footer_card_div .tikana_container .tikana_div  p{
+        font-size: 14px;
+    }
+    .footer_card_div .tikana_container .social_icon i{
+        font-size: 14px;
+    }
+/* ---tikana section End----- */
+/* -----------------------------Footer SEC End------------------ */
+
+
+  
+/* -----------------------------copyRight SEC start---------------- */
+    .copyRight_container{
+        width: 991px;
+        padding: 0 10px;
+    }
+    .copyRight_container h4{
+        font-size: 17px;
+        line-height: 23px;
+        font-weight: 600;
+        color:#ffffff;
+        padding: 20px 0;
+    }
+/* -----------------------------copyRight SEC End------------------ */
+
+
+
+/* -----------------------------------------------------------------
+--------------------protisthan somporte page start------------------
+----------------------------------------------------------------- */
+    .menu_about{
+        width: 991px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+--------------------protisthan somporte page End--------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+------------------------About Employ page start---------------------
+----------------------------------------------------------------- */
+    .table_section{
+        width: 961px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+------------------------About Employ page start---------------------
+----------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------
+------------------------About Prokolpo page start---------------------
+----------------------------------------------------------------- */
+    .prokolpo_section{
+        width: 991px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+------------------------About prokolpo page start---------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+---------------------------Notic page start-------------------------
+----------------------------------------------------------------- */
+    .notic_section{
+        width: 991px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+----------------------------Notic page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------Photo page start-------------------------
+----------------------------------------------------------------- */
+    .photo_section{
+        width: 991px;
+        padding: 0 10px;
+    }
+    .photo_container .photo{
+        width: 24%;
+    }
+/* -----------------------------------------------------------------
+----------------------------Photo page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------video page start-------------------------
+----------------------------------------------------------------- */
+    .video_section{
+        width:991px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+----------------------------video page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------recent page start-------------------------
+----------------------------------------------------------------- */
+    .recent_section{
+        width: 991px;
+        padding: 0 10px;
+    }
+    .recent_container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    .recent_container .photo{
+        width: 32%;
+        height: auto;
+        padding: 5px;
+        background: rgb(255, 254, 254);
+        box-shadow: 0px 0px 5px #0000003d;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .recent_container .photo img{
+        width: 100%;
+        height: 80%;
+    }
+    .recent_container .photo .photo_text{
+        width: 100%;
+        height: 18%;
+        background: #DDDDDD;
+        border-left: 3px solid #049f17 ;
+    }
+    .recent_container .photo .photo_text p{
+        padding-top: 7px;
+        padding-left: 5px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+/* -----------------------------------------------------------------
+----------------------------Recent page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------Contact page start-----------------------
+----------------------------------------------------------------- */
+    .contact_container{
+        width: 991px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+----------------------------Contact page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------404 page start-------------------------
+----------------------------------------------------------------- */
+.page_404{
+    width: 991px;
+    margin: auto;
+    height: 70vh;
+}
+.container_404{
+    width: 100%;
+    height: 100%;
+    padding:100px 150px ;
+}
+/* -----------------------------------------------------------------
+----------------------------404 page End-------------------------
+----------------------------------------------------------------- */
+  }
+/* -----------------------------------------------------------------
+---------------------Responsive 1200px page End-------------------
+----------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------
+---------------------Responsive 991px page start-------------------
+----------------------------------------------------------------- */
+@media only screen and (max-width: 991px){
+
+/* ------------------------Bnnaar SEC Start---------------------- */
+    .bannar_section{
+        width: 768px;
+        padding: 0 10px;
+    }
+/* ------------------------Banner SEC End------------------------ */
+
+
+
+/* ------------------------Menu SEC Start------------------------ */
+    .menu_section{
+        width: 768px;
+        padding: 0 10px;
+    }
+    .main_menu_container{
+        width: 100%;
+        height: auto;
+    }
+    .main_menu_container .full_menu{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .main_menu_container .full_menu .icon_bx{
+        width: 100%;
+        height: auto;
+        background:#049f17 ;
+        margin-bottom: 3px;
+        display: block;
+    }
+    .main_menu_container .full_menu .icon_bx .menu_icon{
+        border: 1px solid #ffffff;
+        width: 50px;
+        height: 40px;
+        border-radius: 5px;
+        position: relative;
+        float: right;
+        display: block;
+        margin: 5px 0;
+    }
+    .main_menu_container .full_menu .icon_bx .menu_icon i{
+        font-size: 26px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color:#ffffff;
+    }
+    .main_menu{
+        width: 100%;
+        display: none;
+        flex-wrap: wrap;
+        background: #049f17;
+        padding: 0;
+        transition: all 0.2 linear;
+        border-top: 1px solid rgb(255, 255, 255);
+        margin-top: -3px;
+    }
+    .main_menu.active{
+        display: block;
+    }
+    .main_menu_container .main_menu li {
+        list-style: none;
+        border-right: 1px solid #00000036;
+        padding:14px ;
+        display: block;
+        width: 100%;
+        transition: all 0.3 linear;
+    }
+    .main_menu_container .main_menu li  a{
+        color:#ffffff;
+        font-size: 14px;
+        display: flex;
+        align-items: center;    
+        justify-content: space-between;
+        text-decoration: none;
+        transition: all 0.2 linear;
+    }
+
+/* ----sub menu section----- */
+    .sub_menu_1{
+        display: none;
+        z-index: 50000;
+        width: 100%;
+        transition: all 0.2 linear;
+    }
+    .sub_menu_2{
+        display: none;
+        z-index: 50000;
+    }
+    .sub_menu_3{
+        display: none;
+        z-index: 50000;
+    }
+    .main_menu_container .main_menu li:hover .sub_menu_1{
+        display: block;
+        position: relative;
+        flex-direction: column;
+        background: #2E2E2E;
+        margin-top: 14px;
+        margin-left: -14px;
+        width: 78%;
+        transition: all 0.2 linear;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .main_menu_container .main_menu li:hover .sub_menu_1 li{
+        width: 100%;
+        height: 40px;
+        padding: 0 5%;
+        border-right: none;
+        display: block;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        transition: all 0.3s linear;
+        margin-left: -32px;
+        transition: all 0.2 linear;
+    }
+    .main_menu_container .main_menu li:hover .sub_menu_1 li:hover{
+        border-left: 4px solid #079F17;
+        width: 70%;
+        transition: all 0.3s linear;
+        position: relative;
+        transition: all 0.2 linear;
+    }
+
+    .main_menu_container .main_menu li:hover .sub_menu_2{
+        display: block;
+        flex-direction: column;
+        background: #2E2E2E;
+        margin-top: 14px;
+        margin-left: -14px;
+        width: 78%;
+        position: relative;
+        transition: all 0.2 linear;
+    }
+    .main_menu_container .main_menu li:hover .sub_menu_2 li{
+        width: 100%;
+        height: 40px;
+        padding: 0 8%;
+        border-right: none;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s linear;
+        margin-left: -32px;
+        transition: all 0.2 linear;
+    }
+    .main_menu_container .main_menu li:hover .sub_menu_2 li:hover{
+        border-left: 4px solid #079F17;
+        width: 50%;
+        transition: all 0.3s linear;
+    }
+
+    .main_menu_container .main_menu li:hover .sub_menu_3{
+        display: block;
+        flex-direction: column;
+        background: #2E2E2E;
+        margin-top: 14px;
+        margin-left: -14px;
+        width: 78%;
+        position: relative;
+        transition: all 0.2 linear;
+    }
+    .main_menu_container .main_menu li:hover .sub_menu_3 li{
+        width:100%;
+        height: 40px;
+        padding: 0 8%;
+        border-right: none;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s linear;
+        margin-left: -32px;
+        transition: all 0.2 linear;
+    }
+    .main_menu_container .main_menu li:hover .sub_menu_3 li:hover{
+        border-left: 4px solid #079F17;
+        width: 70%;
+        transition: all 0.3s linear;
+    }
+  /* ----sub menu section----- */
+  /* ------------------------MEnu SEC End-------------------------- */
+
+
+
+
+
+
+/* -----------------------Sironam SEC start----------------------- */
+    .seronam_section{
+        width: 768px;
+        padding: 0 10px;
+    }
+    .seronam_section .seronam_container .seroram_headding{
+        width: 18%;
+    }
+/* -----------------------------Sironam SEC End------------------ */
+
+
+
+/* -----------------------------Slider SEC Start---------------- */
+    .slider_section{
+        width: 768px;
+        padding: 0 10px;
+    }
+    .carousel-item{
+        height: auto;
+    }
+/* -----------------------------Slider SEC End------------------ */
+
+
+
+/* -----------------------------Body SEC End------------------ */
+    .body_section{
+        width: 768px;
+        margin: auto;
+        height: auto;
+        display: block;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .mian_body{
+        width: 100%;
+        height: auto;
+        background: rgb(255, 255, 255);
+    }
+    /* ---about section start--- */
+    .about_section{
+        width: 100%;
+        height: auto;
+    }
+    .about_container{
+        width: 100%;
+        background: rgb(255, 255, 255);
+        padding: 10px;
+        box-shadow: 0px 0px 5px #0000001a;
+        border-radius: 3px;
+        border:1px solid #00000015;
+    }
+    .about_container img{
+        height: 270px;
+        width: 400px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        float: right;
+    }
+    .about_container p{
+        text-align: justify;
+        font-size: 19px;
+        line-height: 26px;
+        font-weight: 400;
+        color:#000000;
+    }
+    .about_container p a{
+        text-decoration: none;
+    }
+/* ---about section End --- */
+
+
+/* -- card section start -- */
+    .card_section{
+        width: 100%;
+        height: auto;
+    }
+    .card_container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card_container .card{
+        height: 200px;
+        width: 48%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+        padding: 15px;
+        box-shadow: 0px 0px 5px #0000001a;
+    }
+    .card_container .card .card_headding{
+        width: 100%;
+        height: 35px;
+        border-bottom: 1px solid #0000002f;
+        position: relative;
+    }
+    .card_container .card .card_headding h1{
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 700;
+        color:#079F17;
+        margin-top: 5px;
+    }
+    .card_container .card .card_headding::after{
+        content: '';
+        height: 3px;
+        width: 30px;
+        background:#079F17 ;
+        position: absolute;
+        bottom: -5%;
+        left: 0;
+    }
+    .card_container .card .card_body{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .card_container .card .card_body .card_body_left{
+        width:40%;
+        height: auto;
+    }
+    .card_container .card .card_body .card_body_left img{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    }
+    .card_container .card .card_body .card_body_left img:last-child{
+        width: 100%;
+        height: 130px;
+    }
+    .card_container .card .card_body .card_body_right{
+        width: 60%;
+        height: auto;
+        padding-top: 10px;
+    }
+    .card_container .card .card_body .card_body_right ul li{
+    margin: 3px 0;
+    }
+    .card_container .card .card_body .card_body_right ul li a{
+        text-decoration: none;
+        color:#000000;
+        font-size:15px ;
+        transition: all 0.2s linear;
+    }
+    .card_container .card .card_body .card_body_right ul li a:hover{
+        color:#079F17;
+        transition: all 0.1s linear;
+    }
+/* ----card section End --- */
+
+
+/* ----Slider section Start --- */
+    .image_slider{ 
+        width: 100%;
+        height: auto;
+    }
+    .slider_headding{
+        width: 100%;
+        display: flex;
+        height: auto;
+        background: #DEDEDE;
+        padding-top: 10px;
+        border-left: 4px solid #f00707;
+    }
+    .slider_headding i{
+        transform: rotate(30deg);
+        margin-right: 15px;
+        margin-left: 10px;
+        font-size: 20px;
+        color:#079F17;
+    }
+    .slider_headding h1{
+        font-size: 18px;
+        font-weight: 700;
+        color:#d17014;
+        line-height: 26px;
+    }
+    .slide_div_container{
+        display: flex;
+        margin: 10px 0;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        overflow-y: hidden;
+    }
+    .slide_div_container a{
+        height: 200px;
+        width: 260px;
+        background: #DDDDDD;
+        text-decoration: none;
+        overflow-y: hidden;
+        margin: 0 10px;
+    }
+    .slide_div_container a .slide_div img{
+        width: 100%;
+        height: 140px;
+    }
+    .slide_div_container a .slide_div p{
+        height: 60px;
+        font-size:15px ;
+        line-height: 23px;
+        color:#000000;
+        font-weight: 400;
+        border-left: 3px solid #079F17;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+/* -----Slider section End ---- */
+
+
+
+/* ----Slider section Start --- */
+    .video_slider{ 
+        width: 100%;
+        height: auto;
+    }
+    .video_headding{
+        width: 100%;
+        display: flex;
+        height: auto;
+        background: #DEDEDE;
+        padding-top: 10px;
+        border-left: 4px solid #f00707;
+    }
+    .video_headding i{
+        margin-right: 15px;
+        margin-left: 10px;
+        font-size: 20px;
+        color:#079F17;
+    }
+    .video_headding h1{
+        font-size: 18px;
+        font-weight: 700;
+        color:#d17014;
+        line-height: 26px;
+    }
+    .slide_vid_div_container{
+        display: flex;
+        margin: 10px 0;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        overflow-y: hidden;
+    }
+    .slide_vid_div_container a{
+        height: 200px;
+        width: 220px;
+        background: #DDDDDD;
+        text-decoration: none;
+        overflow-y: hidden;
+        margin: 0 10px;
+    }
+    .slide_vid_div_container a iframe{
+        width: 100%;
+        height: 100%;
+    }
+/* -----Slider section End ---- */
+/* -----------------------------Body SEC End------------------ */
+
+
+
+/* -----------------------------Info body SEC start---------------- */
+    .info_body{
+        width: 100%;
+        padding: 0 10px;
+    }
+/* ----meyor card section start--- */
+    .meyor_card{
+        width: 100%;
+        height: 220px;
+        margin-bottom: 10px;
+    }
+    .meyor_container .meyor_body img{
+        height: 170px;
+        width: 170px;
+    }
+/* ----meyor card section end--- */
+/* ----notic card section Start--- */
+    .notic_card .notic_container .notic_row i{
+        margin-right: 18px;
+    }
+/* ----notic card section end----- */
+/* ----notic card section Start--- */
+
+    .link_card .link_container .notic_row i{
+        margin-right: 18px;
+    }
+/* ----notic card section end----- */
+/* -----------------------------Info body SEC End------------------ */
+
+
+
+/* -----------------------------footer SEC Start ------------------ */
+    .footer_container{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    .footer_card_div{
+        width: 48%;
+        margin: 20px 0;
+}
+/* ---tikana section start----- */
+    .footer_card_div .tikana_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 80%;
+    }
+/* ---tikana section End----- */
+
+/* -----------------------------Footer SEC End------------------ */
+
+
+
+/* -----------------------------copyRight SEC start---------------- */
+    .copyRight_section{
+        width: 100%;
+        background: #1D2023;
+        border-top: .5px solid #ffffff48;
+    }
+    .copyRight_container{
+        width: 768px;
+
+        padding: 0 10px;
+    }
+    .copyRight_container h4{
+        padding: 20px 0;
+    }
+/* -----------------------------copyRight SEC End------------------ */
+
+
+
+/* -----------------------------------------------------------------
+--------------------protisthan somporte page start------------------
+----------------------------------------------------------------- */
+    .menu_about{
+        width: 768px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+--------------------protisthan somporte page End--------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+------------------------About Employ page start---------------------
+----------------------------------------------------------------- */
+    .table_section{
+        width: 748px;
+    }
+/* -----------------------------------------------------------------
+------------------------About Employ page start---------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+------------------------About Prokolpo page start---------------------
+----------------------------------------------------------------- */
+    .prokolpo_section{
+        width: 768px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+------------------------About prokolpo page start---------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+---------------------------Notic page start-------------------------
+----------------------------------------------------------------- */
+    .notic_section{
+        width: 768px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+----------------------------Notic page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------counsil page start-------------------------
+----------------------------------------------------------------- */
+    .pagination_section{
+        padding:  5px;
+    }
+/* -----------------------------------------------------------------
+----------------------------counsil page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------Photo page start-------------------------
+----------------------------------------------------------------- */
+    .photo_section{
+        width: 768px;
+        padding: 0 10px;
+    }
+    .photo_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .photo_container .photo{
+        width: 48%;
+        height: 180px;
+        padding: 5px;
+        background: rgb(255, 254, 254);
+        box-shadow: 0px 0px 5px #0000003d;
+        position: relative;
+        margin: 20px 0;
+    }
+/* -----------------------------------------------------------------
+----------------------------Photo page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------video page start-------------------------
+----------------------------------------------------------------- */
+    .video_section{
+        width:768px;
+        padding: 0 10px;
+    }
+/* -----------------------------------------------------------------
+----------------------------video page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------recent page start-------------------------
+----------------------------------------------------------------- */
+    .recent_section{
+        width: 768px;
+        padding: 0 10px;
+    }
+    .recent_container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .recent_container .photo{
+        width: 100%;
+        height: 380px;
+        margin: 25px 0;
+    }
+/* -----------------------------------------------------------------
+----------------------------Recent page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------Contact page start-----------------------
+----------------------------------------------------------------- */
+    .contact_container{
+        width: 768px;
+        padding: 45px 10px;
+    }
+    .contact_container .contact_headding h2{
+        color:#049f17;
+    }
+    .contact_container .txx{
+        width: 250px;
+        padding:15px;
+        margin: 20px;
+    }
+    .contact_container textarea{
+        width: 95%;
+        padding: 15px;
+        margin: 15px 0;
+        margin-bottom: 35px;
+    }
+    .contact_container .send{
+        padding: 15px 55px;
+        background:#049f17 ;
+        color:#ffffff;
+        font-size:18px ;
+        line-height: 28px;
+        text-decoration: none;
+        transition: all 0.3s linear;
+    }
+    .contact_map{
+        width: 100%;
+        height: 500px;
+    }
+    .contact_container .send:hover{
+        background: #040E2A;
+        transition: all 0.3s linear;
+    }
+/* -----------------------------------------------------------------
+----------------------------Contact page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------404 page start-------------------------
+----------------------------------------------------------------- */
+.page_404{
+    width: 768px;
+    margin: auto;
+    height: auto;
+}
+.container_404{
+    width: 100%;
+    height: 100%;
+    padding: 150px ;
+}
+/* -----------------------------------------------------------------
+----------------------------404 page End-------------------------
+----------------------------------------------------------------- */
+}
+/* -----------------------------------------------------------------
+---------------------Responsive 991px page End-------------------
+----------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------
+---------------------Responsive 768px page start-------------------
+----------------------------------------------------------------- */
+@media only screen and (max-width: 768px){
+
+/* ------------------------Bnnaar SEC Start---------------------- */
+    .bannar_section{
+        width: 430px;
+    }
+/* ------------------------Banner SEC End------------------------ */
+
+
+
+/* ------------------------Menu SEC Start------------------------ */
+    .menu_section{
+        width: 430px;
+    }
+/* ------------------------MEnu SEC End-------------------------- */
+
+
+
+/* -----------------------Sironam SEC start----------------------- */
+    .seronam_section{
+        width: 430px;
+    }
+    .seronam_section .seronam_container .seroram_headding{
+        width: 15%;
+    }
+    .seronam_section .seronam_container .seroram_headding p{
+        margin-left: 5px;
+    }
+    .seronam_section .seronam_container .seroman_text{
+        width: 85%;
+    }
+/* -----------------------------Sironam SEC End------------------ */
+
+
+
+/* -----------------------------Slider SEC Start---------------- */
+    .slider_section{
+        width: 430px;
+    }
+/* -----------------------------Slider SEC End------------------ */
+
+
+
+/* -----------------------------Body SEC End------------------ */
+    .body_section{
+        width: 430px;
+        padding: 0 10px;
+    }
+/* -- card section start -- */
+    .card_container .card{
+        width: 100%;
+    }
+/* ----card section End --- */
+/* -----------------------------Body SEC End------------------ */
+
+
+
+/* -----------------------------footer SEC Start ------------------ */
+    .footer_container{
+        width: 430px;
+    }
+    .footer_card_div{
+        width: 100%;
+    }
+/* -----------------------------Footer SEC End------------------ */
+
+
+
+/* -----------------------------copyRight SEC start---------------- */
+    .copyRight_container{
+        width: 430px;
+        padding: 0 10px;
+    }
+/* -----------------------------copyRight SEC End------------------ */
+
+
+
+/* -----------------------------------------------------------------
+--------------------protisthan somporte page start------------------
+----------------------------------------------------------------- */
+    .menu_about{
+        width: 430px;
+    }
+    .menu_about_container .menu_body img{
+        height: 300px;
+        width: 100%;
+        padding-left: 0;
+    }
+/* -----------------------------------------------------------------
+--------------------protisthan somporte page End--------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+------------------------About Employ page start---------------------
+----------------------------------------------------------------- */
+    .table_section{
+        width: 410px;
+    }
+    .table_section .table  tr td img{
+        height: 50px;
+        width: 50px;
+    }
+    .table_section .table  tr td button{
+        padding: 4px 8px;
+        background:#049f17;
+        color:#ffffff;
+        margin-top:0;
+        font-size: 13px;
+    }
+    .table_section .table_headding h2{
+        font-size: 16px;
+    }
+    .table_section .table  tr th{
+        font-size: 13px;
+    }
+    .table_section .table tr .tx{
+        font-size: 13px;
+    }
+/* -----------------------------------------------------------------
+------------------------About Employ page start---------------------
+----------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------
+------------------------About Prokolpo page start---------------------
+----------------------------------------------------------------- */
+    .prokolpo_section{
+        width: 430px;
+        padding: 0 10px;
+    }
+    .prokolpo_section table thead tr th{
+        font-size: 15px;
+    }
+    .prokolpo_section table  tbody tr td{
+        font-size: 15px;
+    }
+    .prokolpo_section table  tbody tr td button{
+        background:#049f17;
+        padding: 5px 12px;
+        color:#ffffff;
+        border-radius: 4px ;
+        font-size: 13px;
+    }
+/* -----------------------------------------------------------------
+------------------------About prokolpo page start---------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+---------------------------Notic page start-------------------------
+----------------------------------------------------------------- */
+    .notic_section{
+        width: 430px;
+        padding: 0 10px;
+    }
+    .notic_section table thead tr th{
+        font-size: 13px;
+    }
+    .notic_section table  tbody tr td{
+        font-size: 13px;
+    }
+    .notic_section table  tbody tr td button{
+        padding: 3px 7px;
+        font-size: 10px;
+    }
+    .notic_section table  tbody tr td a{
+        font-size: 13px;
+    }
+/* -----------------------------------------------------------------
+----------------------------Notic page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------counsil page start-------------------------
+----------------------------------------------------------------- */
+    .pagination_section{
+        padding:  5px;
+    }
+/* -----------------------------------------------------------------
+----------------------------counsil page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------Photo page start-------------------------
+----------------------------------------------------------------- */
+    .photo_section{
+        width: 430px;
+        padding: 0 10px;
+    }
+    .photo_container .photo{
+        width: 100%;
+        margin: 15px 0;
+    }
+/* -----------------------------------------------------------------
+----------------------------Photo page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------video page start-------------------------
+----------------------------------------------------------------- */
+    .video_section{
+        width:430px;
+        padding: 0 10px;
+    }
+    .video_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .video_container .video{
+        width: 100%;
+        margin: 15px 0;
+    }
+/* -----------------------------------------------------------------
+----------------------------video page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------recent page start-------------------------
+----------------------------------------------------------------- */
+    .recent_section{
+        width: 430px;
+        padding: 0 10px;
+    }
+    .recent_container .photo{
+        width: 100%;
+        height: 300px;
+        margin: 15px 0;
+    }
+/* -----------------------------------------------------------------
+----------------------------Recent page End-------------------------
+----------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------------------------
+----------------------------Contact page start-----------------------
+----------------------------------------------------------------- */
+    .contact_container{
+        width: 430px;
+        padding: 45px 10px;
+    }
+    .contact_container .txx{
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact_container textarea{
+        width: 100%;
+    }
+/* -----------------------------------------------------------------
+----------------------------Contact page End-------------------------
+----------------------------------------------------------------- */
+
+
+/* -----------------------------------------------------------------
+----------------------------404 page start-------------------------
+----------------------------------------------------------------- */
+.page_404{
+    width: 430px;
+    margin: auto;
+    height: auto;
+}
+.container_404{
+    width: 100%;
+    height: 100%;
+    padding: 50px ;
+}
+/* -----------------------------------------------------------------
+----------------------------404 page End-------------------------
+----------------------------------------------------------------- */
+}
+
+/* -----------------------------------------------------------------
+---------------------Responsive 768px page End-------------------
+----------------------------------------------------------------- */
